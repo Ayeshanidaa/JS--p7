@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bingo-container">
+        <h1>Bingo Game</h1>
+        
+        <!-- Name Input Section -->
+        <div class="name-input-container">
+            <label for="player1Name">Enter Player 1's Name:</label>
+            <input type="text" id="player1Name" placeholder="Player 1">
+            <label for="player2Name">Enter Player 2's Name:</label>
+            <input type="text" id="player2Name" placeholder="Player 2">
+            <button id="startButton">
+                Start Game
+            </button>
+        </div>
+        
+        <div class="player-cards">
+            <h1 id="player1Heading">Player 1's Card</h1>
+            <div class="player-card" id="player1Card"></div>
+            <h1 id="player2Heading">Player 2's Card</h1>
+            <div class="player-card" id="player2Card"></div>
+        </div>
+
+        <div class="controls">
+            <button id="resetButton" disabled>
+                Reset
+            </button>
+        </div>
+
+        <div class="input-container">
+            <label for="numberInput">
+                Enter a number (1-25):
+            </label>
+            <input type="number" id="numberInput" min="1" max="25" disabled>
+            <button id="markButton" disabled>
+                Mark
+            </button>
+        </div>
+
+        <div id="turnDisplay"></div>
+        <div id="winDisplay"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
